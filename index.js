@@ -34,6 +34,9 @@ app.use(
   })
 );
 // routes
+app.get("/",(req,res)=>{
+res.send("hello Blooooog");
+})
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/posts", postRoutes);
@@ -67,3 +70,5 @@ app.listen(port, () => {
   dbConnection();
   console.log(`server running on ${port} port`);
 });
+
+export default app;
