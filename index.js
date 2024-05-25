@@ -70,5 +70,5 @@ app.listen(port, () => {
   dbConnection();
   console.log(`server running on ${port} port`);
 });
-
+export {userRoutes,authRoutes,postRoutes};
 export default app;
